@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  color: #555;
+  font-family: 'Noto Serif JP' ,"Yu Gothic Medium", YuGothic, "Custom Yu Gothic", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Verdana, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 1rem;
+}
+a {
+  color: #555;
+  text-decoration: none;
+}
+a:hover {
+  color: #a6ce39;
+  transition: ease-in-out .3s;
+}
+section {
+  margin: 7rem auto 3rem;
+  padding: 0 5rem;
+}
+.wrapper {
+  width: 85%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.work {
+  width: calc(100% / 2 - 52px);
+  height: 100%;
+  margin: 1rem;
+}
+.work img {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow:
+  0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+  0 5px 6.1px rgba(0, 0, 0, 0.076),
+  0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+  0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+  0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+  0 30px 74px rgba(0, 0, 0, 0.11);
+}
+.work a img {
+  top: 0;
+  position: relative;
+}
+.work a img:hover {
+  opacity: .6;
+  top: -3px;
+  transition: ease-in-out .3s;
+}
+.work p {
+  margin-top: .9rem;
+}
+
+/* TABLET SIZE
+================================================ */
+@media (max-width: 1050px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+}
+
+/* MOBILE SIZE
+================================================ */
+@media (max-width: 700px) {
+  section {
+    margin: 7rem auto;
+    /* min-height: 100vh; */
+    padding: 0 1rem;
+  }
+  .wrapper {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .work {
+    width: 100%;
+    height: 100%;
+    margin: 3rem 0;
+  }
+}
+
+/* SPACE CHEKING
+================================================ */
+/* section {
+  background-color: red;  
+}
+.wrapper {
+  background-color: blue;
+}
+.work {
+  background-color: yellow;
+}
+.work p {
+  background-color: greenyellow;
+} */
